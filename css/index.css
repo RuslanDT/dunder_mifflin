@@ -1,0 +1,45 @@
+body{
+    background-color: #F6F6F6;
+    overflow: hidden;
+    color: black;
+}
+
+.poppins{
+    font-family: 'Poppins', 'Arial Narrow Bold', sans-serif;
+}
+
+.menu-lateral{
+    position: absolute;
+    border: 2px solid black;
+    margin: .5rem 0 0 1rem;
+    background-color: transparent;
+    width: 3rem;
+}
+
+.cont-inicio{
+    height: 95vh;
+    background-color: #EAC761;
+}
+
+img{
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.logo{
+    width: 20%;
+}
+
+.cont-inicio  div{
+    height: 50%;
+}
+
+.imagenes{
+    position: absolute;
+}
+
+.vendedor{
+    width: 40%;
+    position: absolute;
+    right: 0;
+}
