@@ -1,11 +1,27 @@
 body{
     background-color: #F6F6F6;
-    overflow: hidden;
     color: black;
 }
 
-.poppins{
+body::-webkit-scrollbar {
+    width: 13px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #272727c7;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #272727;    /* color of the scroll thumb */
+    border-radius: 100px;       /* roundness of the scroll thumb */
+  }
+
+p{
     font-family: 'Poppins', 'Arial Narrow Bold', sans-serif;
+}
+
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .menu-lateral{
@@ -17,7 +33,8 @@ body{
 }
 
 .cont-inicio{
-    height: 95vh;
+    width: 100vw;
+    height: 90vh;
     background-color: #EAC761;
 }
 
@@ -42,4 +59,25 @@ img{
     width: 40%;
     position: absolute;
     right: 0;
+}
+
+.separador{
+    background-color: #49281F;
+    width: 40%;
+    height: .4rem;
+    justify-content: center;
+    border-radius: 30px;
+    margin: 2.5% 0;
+}
+
+.categorias{
+    height: 400px;
+    margin: 5% 0%;
+    padding: 5% 10%;
+    align-self: center;
+    justify-self: center;
+}
+
+.card-text{
+    text-align: center;
 }
