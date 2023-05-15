@@ -16,12 +16,13 @@ body::-webkit-scrollbar {
     border-radius: 100px;       /* roundness of the scroll thumb */
   }
 
-p{
+p, h3, h4, h5, h6, button{
     font-family: 'Poppins', 'Arial Narrow Bold', sans-serif;
 }
 
 h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: .4rem;
 }
 
 .menu-lateral{
@@ -117,4 +118,8 @@ img{
 .certificado:hover{
     box-shadow: 0px 10px 32px -7px rgba(0,0,0,0.33);
     transform: scale(1.1);
+}
+
+.borde-chido{
+    
 }
