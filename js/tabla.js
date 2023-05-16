@@ -19,8 +19,8 @@ $(document).ready(() => {
                     }
                 }
             ],
-            responsive: true,
             "order": [1, 'asc'],
+            responsive: true,
             columnDefs: [
                 { responsivePriority: 1, targets: 6 },
                 { responsivePriority: 2, targets: [1, 2] },

@@ -1,35 +1,31 @@
 html {
     font-family: 'poppins';
 }
-
-html,
-body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 body {
     background-color: #d9d9d9;
 }
 
 body::-webkit-scrollbar {
-    width: 13px;               /* width of the entire scrollbar */
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: #272727c7;        /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: #272727;    /* color of the scroll thumb */
-    border-radius: 100px;       /* roundness of the scroll thumb */
-  }
+    width: 13px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #272727c7;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #272727;
+    /* color of the scroll thumb */
+    border-radius: 100px;
+    /* roundness of the scroll thumb */
+}
 
 .cont {
     text-align: center;
     background-color: gray;
+    width: 100%;
 }
 
 
@@ -39,35 +35,37 @@ label {
     font-weight: bold;
 }
 
-.modalito{
+.modalito {
     color: black;
 }
 
-.navbar-brand, .offcanvas-title{
+.navbar-brand,
+.offcanvas-title {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.7rem;
 }
 
-.offcanvas, .list-group-item{
+.offcanvas,
+.list-group-item {
     background-color: #272727 !important;
     color: #F6F6F6;
 }
 
-.list-group-item:hover{
+.list-group-item:hover {
     transition: all .4s ease-in;
     background-color: #4b4b4b !important;
 }
 
-li a{
+li a {
     text-decoration: none;
     color: inherit;
     font-size: .9rem;
 }
 
-.btn-close{
+.btn-close {
     background-color: red;
 }
 
-.menu-lateral{
+.menu-lateral {
     border: 2px solid black;
 }
