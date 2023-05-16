@@ -16,7 +16,7 @@ body::-webkit-scrollbar {
     border-radius: 100px;       /* roundness of the scroll thumb */
   }
 
-p, h3, h4, h5, h6, button{
+p, h3, h4, h5, h6, button, div{
     font-family: 'Poppins', 'Arial Narrow Bold', sans-serif;
 }
 
@@ -25,18 +25,37 @@ h2{
     letter-spacing: .4rem;
 }
 
-.menu-lateral{
-    position: absolute;
-    border: 2px solid black;
-    margin: .5rem 0 0 1rem;
-    background-color: transparent;
-    width: 3rem;
+.navbar-brand, .offcanvas-title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.7rem;
 }
 
-.cont-inicio{
+.offcanvas, .list-group-item{
+    background-color: #272727 !important;
+    color: #F6F6F6;
+}
+
+li a{
+    text-decoration: none;
+    color: inherit;
+    font-size: .9rem;
+}
+
+.btn-close{
+    background-color: red;
+}
+
+.menu-lateral{
+    border: 2px solid black;
+}
+
+section{
     width: 100vw;
     height: 90vh;
-    background-color: #EAC761;
+}
+
+.cont-sucursales div{
+    height: fit-content;
 }
 
 img{
@@ -64,19 +83,11 @@ img{
 
 .separador{
     background-color: #49281F;
-    width: 40%;
-    height: .4rem;
+    width: 20%;
+    height: .6rem;
     justify-content: center;
     border-radius: 30px;
     margin: 2.5% 0;
-}
-
-.categorias{
-    height: 400px;
-    margin: 5% 0%;
-    padding: 5% 10%;
-    align-self: center;
-    justify-self: center;
 }
 
 .card-text{
@@ -87,7 +98,7 @@ img{
     background-color: #272727;
 }
 
-.reseñas h2{
+.reseñas h2, .categoria{
     color: #F6F6F6;
 }
 
@@ -112,7 +123,10 @@ img{
     height: 15rem; 
     background-color: white;
     border-radius: 20px;
+    cursor: pointer;
     transition: all .4s ease-in-out;
+    position: relative;
+    overflow: hidden;
 }
 
 .certificado:hover{
@@ -120,6 +134,58 @@ img{
     transform: scale(1.1);
 }
 
-.borde-chido{
-    
+.nombre-certificado{
+    width: 100%;
+    height: 0%;
+    color: #F6F6F6;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: #272727b7;
+    backdrop-filter: blur(4px);
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    transition: all .3s ease-in;
+}
+
+
+.certificado:hover .nombre-certificado{
+    height: 100%;
+}
+
+.item-cat{
+    cursor: pointer;
+    background-color: transparent !important;
+    border-color: #f6f6f681;
+    color: #f6f6f681;
+}
+
+.item-icon{
+    opacity: 0.5;
+}
+
+.item-cat:hover .item-icon{
+    transition: all .4s ease-in;
+    transform: rotateZ(0deg);
+    opacity: 1;
+    animation: sacudida .5s ease-in alternate-reverse infinite;
+}
+
+.item-cat:hover{
+    transition: all .4s ease-in;
+    box-shadow: 0 .5rem 1rem #eac86198;
+    border-color: #EAC761;
+    color: #F6F6F6;
+}
+
+@keyframes sacudida {
+    0%{
+        transform: rotateZ(20deg) scale(1.1);
+    }
+    50%{
+        transform: rotateZ(-20deg) scale(.9);
+    }
+    100%{
+        transform: rotateZ(0deg) scale(1);
+    }
 }
