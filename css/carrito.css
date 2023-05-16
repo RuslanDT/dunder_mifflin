@@ -1,0 +1,41 @@
+body::-webkit-scrollbar {
+    width: 13px;               /* width of the entire scrollbar */
+  }
+  
+body::-webkit-scrollbar-track {
+background: #272727c7;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: #272727;    /* color of the scroll thumb */
+border-radius: 100px;       /* roundness of the scroll thumb */
+}
+
+.navbar-brand, .offcanvas-title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.7rem;
+}
+
+.offcanvas, .item{
+    background-color: #272727 !important;
+    color: #F6F6F6;
+}
+
+.item:hover{
+    transition: all .4s ease-in;
+    background-color: #4b4b4b !important;
+}
+
+li a{
+    text-decoration: none;
+    color: inherit;
+    font-size: .9rem;
+}
+
+.btn-close{
+    background-color: red;
+}
+
+.menu-lateral{
+    border: 2px solid black;
+}

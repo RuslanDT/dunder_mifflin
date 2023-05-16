@@ -2,92 +2,127 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/dataTables.bootstrap5.min.css" />
-    <link rel="stylesheet" href="../css/responsive.bootstrap5.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/tabla.css">
-    <title>TABLA</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/dataTables.bootstrap5.min.css" />
+  <link rel="stylesheet" href="../css/responsive.bootstrap5.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tabla.css">
+  <title>TABLA</title>
 </head>
 
 <body>
-    <div class="container">
-        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalAgregar">Agregar Producto<i class="fa-solid fa-square-plus"></i></i></button>
 
-        <div class="modal fade" id="modalAgregar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Producto</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <label class="modalito">Clave:</label>
-                    <input type="number" id="clave" class="form-control" placeholder="">
-                    <label class="modalito">Foto:</label>
-                    <input type="file" id="clave" class="form-control" placeholder="">
-                    <label class="modalito">Producto:</label>
-                    <input type="text" id="producto" class="form-control" placeholder="">
-                    <label class="modalito">Categpría:</label>
-                    <input type="text" id="categoria" class="form-control" placeholder="">
-                    <label class="modalito">Existencia:</label>
-                    <input type="number" id="existencia" class="form-control" placeholder="">
-                    <label class="modalito">Nivel de reorden:</label>
-                    <input type="number" id="nivel" class="form-control" placeholder="">
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                  <button type="button" class="btn btn-primary" id="agregarFila" onclick="agregar()">Agregar</button>
-                </div>
-              </div>
-            </div>
-        </div>
+  <head class="mb-5">
+    <nav class="navbar fixed-top shadow-sm" style="background-color: #EAC761 !important;">
+      <div class="container-fluid ms-3 justify-content-start align-items-center column-gap-4">
+        <!-- BOTON DE MENU -->
+        <button class="btn menu-lateral" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+          aria-controls="staticBackdrop" data-aos="fade-down" data-aos-duration="1000">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <h1>
+          <a class="navbar-brand" href="#">DUNDER MIFFLIN INC.</a>
+        </h1>
+      </div>
+    </nav>
+  </head>
 
-        <div class="modal fade" id="modalEditar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Producto</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <label class="modalito">Producto:</label>
-                    <input type="text" id="productoE" class="form-control" placeholder="">
-                    <label class="modalito">Categoría:</label>
-                    <input type="text" id="categoriaE" class="form-control" placeholder="">
-                    <label class="modalito">Existencia:</label>
-                    <input type="number" id="existenciaE" class="form-control" placeholder="">
-                    <label class="modalito">Nivel de reorden:</label>
-                    <input type="number" id="nivelE" class="form-control" placeholder="">
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                  <button type="button" class="btn btn-primary" id="editarFila">Agregar</button>
-                </div>
-              </div>
-            </div>
-        </div>
-
-        <table id="productos" class="table table-dark table-bordered w-100 h-100"></table>
+  <!-- MENU LATERAL -->
+  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+    aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header mb-5">
+      <h5 class="offcanvas-title" id="staticBackdropLabel">MENU</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
+    <div class="offcanvas-body">
+      <div class="list-group">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item py-4"><a href="../html/index.html" class="d-flex align-items-center gap-3"><i class="fa-solid fa-house"></i>Inicio</a></li>
+          <li class="list-group-item py-4"><a href="../html/carrito.html" class="d-flex align-items-center gap-3"><i class="fa-solid fa-cart-shopping"></i>Carrito</a></li>
+          <li class="list-group-item py-4"><a href="../html/productos.html" class="d-flex align-items-center gap-3"><i class="fa-solid fa-boxes-stacked"></i>Productos Admin</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
 
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script src="../js/jquery.dataTables.min.js"></script>
-    <script src="../js/dataTables.bootstrap5.min.js"></script>
-    <script src="../js/dataTables.responsive.min.js"></script>
-    <script src="../js/responsive.bootstrap5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../js/tabla.js"></script>
+  <div class="cont my-5 pt-5">
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalAgregar">Agregar Producto<i
+        class="fa-solid fa-square-plus"></i></i></button>
+    <table id="productos" class="table table-dark table-bordered w-100 h-100"></table>
+  </div>
+
+  <div class="modal fade" id="modalAgregar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Producto</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <label class="modalito">Clave:</label>
+          <input type="number" id="clave" class="form-control" placeholder="">
+          <label class="modalito">Foto:</label>
+          <input type="file" id="clave" class="form-control" placeholder="">
+          <label class="modalito">Producto:</label>
+          <input type="text" id="producto" class="form-control" placeholder="">
+          <label class="modalito">Categpría:</label>
+          <input type="text" id="categoria" class="form-control" placeholder="">
+          <label class="modalito">Existencia:</label>
+          <input type="number" id="existencia" class="form-control" placeholder="">
+          <label class="modalito">Nivel de reorden:</label>
+          <input type="number" id="nivel" class="form-control" placeholder="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" id="agregarFila" onclick="agregar()">Agregar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalEditar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Producto</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <label class="modalito">Producto:</label>
+          <input type="text" id="productoE" class="form-control" placeholder="">
+          <label class="modalito">Categoría:</label>
+          <input type="text" id="categoriaE" class="form-control" placeholder="">
+          <label class="modalito">Existencia:</label>
+          <input type="number" id="existenciaE" class="form-control" placeholder="">
+          <label class="modalito">Nivel de reorden:</label>
+          <input type="number" id="nivelE" class="form-control" placeholder="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" id="editarFila">Agregar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/jquery.dataTables.min.js"></script>
+  <script src="../js/dataTables.bootstrap5.min.js"></script>
+  <script src="../js/dataTables.responsive.min.js"></script>
+  <script src="../js/responsive.bootstrap5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../js/tabla.js"></script>
+  <script src="../js/index.js"></script>
 </body>
 
 </html>
