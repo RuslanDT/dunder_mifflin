@@ -1,0 +1,541 @@
+[
+    {
+        "Clave": 1,
+        "Producto": "Chai",
+        "Categoria": "Beverages",
+        "Existencia": 39,
+        "Nivel de Reorden": 10
+    },
+    {
+        "Clave": 2,
+        "Producto": "Chang",
+        "Categoria": "Beverages",
+        "Existencia": 17,
+        "Nivel de Reorden": 25
+    },
+    {
+        "Clave": 24,
+        "Producto": "Guaran\u00c3\u00a1 Fant\u00c3\u00a1stica",
+        "Categoria": "Beverages",
+        "Existencia": 20,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 34,
+        "Producto": "Sasquatch Ale",
+        "Categoria": "Beverages",
+        "Existencia": 111,
+        "Nivel de Reorden": 15
+    },
+    {
+        "Clave": 35,
+        "Producto": "Steeleye Stout",
+        "Categoria": "Beverages",
+        "Existencia": 20,
+        "Nivel de Reorden": 15
+    },
+    {
+        "Clave": 38,
+        "Producto": "C\u00c3\u00b4te de Blaye",
+        "Categoria": "Beverages",
+        "Existencia": 17,
+        "Nivel de Reorden": 15
+    },
+    {
+        "Clave": 39,
+        "Producto": "Chartreuse verte",
+        "Categoria": "Beverages",
+        "Existencia": 69,
+        "Nivel de Reorden": 5
+    },
+    {
+        "Clave": 43,
+        "Producto": "Ipoh Coffee",
+        "Categoria": "Beverages",
+        "Existencia": 17,
+        "Nivel de Reorden": 25
+    },
+    {
+        "Clave": 67,
+        "Producto": "Laughing Lumberjack Lager",
+        "Categoria": "Beverages",
+        "Existencia": 52,
+        "Nivel de Reorden": 10
+    },
+    {
+        "Clave": 70,
+        "Producto": "Outback Lager",
+        "Categoria": "Beverages",
+        "Existencia": 15,
+        "Nivel de Reorden": 30
+    },
+    {
+        "Clave": 75,
+        "Producto": "Rh\u00c3\u00b6nbr\u00c3\u00a4u Klosterbier",
+        "Categoria": "Beverages",
+        "Existencia": 125,
+        "Nivel de Reorden": 25
+    },
+    {
+        "Clave": 76,
+        "Producto": "Lakkalik\u00c3\u00b6\u00c3\u00b6ri",
+        "Categoria": "Beverages",
+        "Existencia": 57,
+        "Nivel de Reorden": 20
+    },
+    {
+        "Clave": 3,
+        "Producto": "Aniseed Syrup",
+        "Categoria": "Condiments",
+        "Existencia": 13,
+        "Nivel de Reorden": 25
+    },
+    {
+        "Clave": 4,
+        "Producto": "Chef Anton's Cajun Seasoning",
+        "Categoria": "Condiments",
+        "Existencia": 53,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 5,
+        "Producto": "Chef Anton's Gumbo Mix",
+        "Categoria": "Condiments",
+        "Existencia": 0,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 6,
+        "Producto": "Grandma's Boysenberry Spread",
+        "Categoria": "Condiments",
+        "Existencia": 120,
+        "Nivel de Reorden": 25
+    },
+    {
+        "Clave": 8,
+        "Producto": "Northwoods Cranberry Sauce",
+        "Categoria": "Condiments",
+        "Existencia": 6,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 15,
+        "Producto": "Genen Shouyu",
+        "Categoria": "Condiments",
+        "Existencia": 39,
+        "Nivel de Reorden": 5
+    },
+    {
+        "Clave": 44,
+        "Producto": "Gula Malacca",
+        "Categoria": "Condiments",
+        "Existencia": 27,
+        "Nivel de Reorden": 15
+    },
+    {
+        "Clave": 61,
+        "Producto": "Sirop d'\u00c3\u00a9rable",
+        "Categoria": "Condiments",
+        "Existencia": 113,
+        "Nivel de Reorden": 25
+    },
+    {
+        "Clave": 63,
+        "Producto": "Vegie-spread",
+        "Categoria": "Condiments",
+        "Existencia": 24,
+        "Nivel de Reorden": 5
+    },
+    {
+        "Clave": 65,
+        "Producto": "Louisiana Fiery Hot Pepper Sauce",
+        "Categoria": "Condiments",
+        "Existencia": 76,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 66,
+        "Producto": "Louisiana Hot Spiced Okra",
+        "Categoria": "Condiments",
+        "Existencia": 4,
+        "Nivel de Reorden": 20
+    },
+    {
+        "Clave": 77,
+        "Producto": "Original Frankfurter gr\u00c3\u00bcne So\u00c3\u0178e",
+        "Categoria": "Condiments",
+        "Existencia": 32,
+        "Nivel de Reorden": 15
+    },
+    {
+        "Clave": 16,
+        "Producto": "Pavlova",
+        "Categoria": "Confections",
+        "Existencia": 29,
+        "Nivel de Reorden": 10
+    },
+    {
+        "Clave": 19,
+        "Producto": "Teatime Chocolate Biscuits",
+        "Categoria": "Confections",
+        "Existencia": 25,
+        "Nivel de Reorden": 5
+    },
+    {
+        "Clave": 20,
+        "Producto": "Sir Rodney's Marmalade",
+        "Categoria": "Confections",
+        "Existencia": 40,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 21,
+        "Producto": "Sir Rodney's Scones",
+        "Categoria": "Confections",
+        "Existencia": 3,
+        "Nivel de Reorden": 5
+    },
+    {
+        "Clave": 25,
+        "Producto": "NuNuCa Nu\u00c3\u0178-Nougat-Creme",
+        "Categoria": "Confections",
+        "Existencia": 76,
+        "Nivel de Reorden": 30
+    },
+    {
+        "Clave": 26,
+        "Producto": "Gumb\u00c3\u00a4r Gummib\u00c3\u00a4rchen",
+        "Categoria": "Confections",
+        "Existencia": 15,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 27,
+        "Producto": "Schoggi Schokolade",
+        "Categoria": "Confections",
+        "Existencia": 49,
+        "Nivel de Reorden": 30
+    },
+    {
+        "Clave": 47,
+        "Producto": "Zaanse koeken",
+        "Categoria": "Confections",
+        "Existencia": 36,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 48,
+        "Producto": "Chocolade",
+        "Categoria": "Confections",
+        "Existencia": 15,
+        "Nivel de Reorden": 25
+    },
+    {
+        "Clave": 49,
+        "Producto": "Maxilaku",
+        "Categoria": "Confections",
+        "Existencia": 10,
+        "Nivel de Reorden": 15
+    },
+    {
+        "Clave": 50,
+        "Producto": "Valkoinen suklaa",
+        "Categoria": "Confections",
+        "Existencia": 65,
+        "Nivel de Reorden": 30
+    },
+    {
+        "Clave": 62,
+        "Producto": "Tarte au sucre",
+        "Categoria": "Confections",
+        "Existencia": 17,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 68,
+        "Producto": "Scottish Longbreads",
+        "Categoria": "Confections",
+        "Existencia": 6,
+        "Nivel de Reorden": 15
+    },
+    {
+        "Clave": 11,
+        "Producto": "Queso Cabrales",
+        "Categoria": "Dairy Products",
+        "Existencia": 22,
+        "Nivel de Reorden": 30
+    },
+    {
+        "Clave": 12,
+        "Producto": "Queso Manchego La Pastora",
+        "Categoria": "Dairy Products",
+        "Existencia": 86,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 31,
+        "Producto": "Gorgonzola Telino",
+        "Categoria": "Dairy Products",
+        "Existencia": 0,
+        "Nivel de Reorden": 20
+    },
+    {
+        "Clave": 32,
+        "Producto": "Mascarpone Fabioli",
+        "Categoria": "Dairy Products",
+        "Existencia": 9,
+        "Nivel de Reorden": 25
+    },
+    {
+        "Clave": 33,
+        "Producto": "Geitost",
+        "Categoria": "Dairy Products",
+        "Existencia": 112,
+        "Nivel de Reorden": 20
+    },
+    {
+        "Clave": 59,
+        "Producto": "Raclette Courdavault",
+        "Categoria": "Dairy Products",
+        "Existencia": 79,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 60,
+        "Producto": "Camembert Pierrot",
+        "Categoria": "Dairy Products",
+        "Existencia": 19,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 69,
+        "Producto": "Gudbrandsdalsost",
+        "Categoria": "Dairy Products",
+        "Existencia": 26,
+        "Nivel de Reorden": 15
+    },
+    {
+        "Clave": 71,
+        "Producto": "Flotemysost",
+        "Categoria": "Dairy Products",
+        "Existencia": 26,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 72,
+        "Producto": "Mozzarella di Giovanni",
+        "Categoria": "Dairy Products",
+        "Existencia": 14,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 22,
+        "Producto": "Gustaf's Kn\u00c3\u00a4ckebr\u00c3\u00b6d",
+        "Categoria": "Grains/Cereals",
+        "Existencia": 104,
+        "Nivel de Reorden": 25
+    },
+    {
+        "Clave": 23,
+        "Producto": "Tunnbr\u00c3\u00b6d",
+        "Categoria": "Grains/Cereals",
+        "Existencia": 61,
+        "Nivel de Reorden": 25
+    },
+    {
+        "Clave": 42,
+        "Producto": "Singaporean Hokkien Fried Mee",
+        "Categoria": "Grains/Cereals",
+        "Existencia": 26,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 52,
+        "Producto": "Filo Mix",
+        "Categoria": "Grains/Cereals",
+        "Existencia": 38,
+        "Nivel de Reorden": 25
+    },
+    {
+        "Clave": 56,
+        "Producto": "Gnocchi di nonna Alice",
+        "Categoria": "Grains/Cereals",
+        "Existencia": 21,
+        "Nivel de Reorden": 30
+    },
+    {
+        "Clave": 57,
+        "Producto": "Ravioli Angelo",
+        "Categoria": "Grains/Cereals",
+        "Existencia": 36,
+        "Nivel de Reorden": 20
+    },
+    {
+        "Clave": 64,
+        "Producto": "Wimmers gute Semmelkn\u00c3\u00b6del",
+        "Categoria": "Grains/Cereals",
+        "Existencia": 22,
+        "Nivel de Reorden": 30
+    },
+    {
+        "Clave": 9,
+        "Producto": "Mishi Kobe Niku",
+        "Categoria": "Meat/Poultry",
+        "Existencia": 29,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 17,
+        "Producto": "Alice Mutton",
+        "Categoria": "Meat/Poultry",
+        "Existencia": 0,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 29,
+        "Producto": "Th\u00c3\u00bcringer Rostbratwurst",
+        "Categoria": "Meat/Poultry",
+        "Existencia": 0,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 53,
+        "Producto": "Perth Pasties",
+        "Categoria": "Meat/Poultry",
+        "Existencia": 0,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 54,
+        "Producto": "Tourti\u00c3\u00a8re",
+        "Categoria": "Meat/Poultry",
+        "Existencia": 21,
+        "Nivel de Reorden": 10
+    },
+    {
+        "Clave": 55,
+        "Producto": "P\u00c3\u00a2t\u00c3\u00a9 chinois",
+        "Categoria": "Meat/Poultry",
+        "Existencia": 115,
+        "Nivel de Reorden": 20
+    },
+    {
+        "Clave": 7,
+        "Producto": "Uncle Bob's Organic Dried Pears",
+        "Categoria": "Produce",
+        "Existencia": 15,
+        "Nivel de Reorden": 10
+    },
+    {
+        "Clave": 14,
+        "Producto": "Tofu",
+        "Categoria": "Produce",
+        "Existencia": 35,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 28,
+        "Producto": "R\u00c3\u00b6ssle Sauerkraut",
+        "Categoria": "Produce",
+        "Existencia": 26,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 51,
+        "Producto": "Manjimup Dried Apples",
+        "Categoria": "Produce",
+        "Existencia": 20,
+        "Nivel de Reorden": 10
+    },
+    {
+        "Clave": 74,
+        "Producto": "Longlife Tofu",
+        "Categoria": "Produce",
+        "Existencia": 4,
+        "Nivel de Reorden": 5
+    },
+    {
+        "Clave": 10,
+        "Producto": "Ikura",
+        "Categoria": "Seafood",
+        "Existencia": 31,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 13,
+        "Producto": "Konbu",
+        "Categoria": "Seafood",
+        "Existencia": 24,
+        "Nivel de Reorden": 5
+    },
+    {
+        "Clave": 18,
+        "Producto": "Carnarvon Tigers",
+        "Categoria": "Seafood",
+        "Existencia": 42,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 30,
+        "Producto": "Nord-Ost Matjeshering",
+        "Categoria": "Seafood",
+        "Existencia": 10,
+        "Nivel de Reorden": 15
+    },
+    {
+        "Clave": 36,
+        "Producto": "Inlagd Sill",
+        "Categoria": "Seafood",
+        "Existencia": 112,
+        "Nivel de Reorden": 20
+    },
+    {
+        "Clave": 37,
+        "Producto": "Gravad lax",
+        "Categoria": "Seafood",
+        "Existencia": 11,
+        "Nivel de Reorden": 25
+    },
+    {
+        "Clave": 40,
+        "Producto": "Boston Crab Meat",
+        "Categoria": "Seafood",
+        "Existencia": 123,
+        "Nivel de Reorden": 30
+    },
+    {
+        "Clave": 41,
+        "Producto": "Jack's New England Clam Chowder",
+        "Categoria": "Seafood",
+        "Existencia": 85,
+        "Nivel de Reorden": 10
+    },
+    {
+        "Clave": 45,
+        "Producto": "Rogede sild",
+        "Categoria": "Seafood",
+        "Existencia": 5,
+        "Nivel de Reorden": 15
+    },
+    {
+        "Clave": 46,
+        "Producto": "Spegesild",
+        "Categoria": "Seafood",
+        "Existencia": 95,
+        "Nivel de Reorden": 0
+    },
+    {
+        "Clave": 58,
+        "Producto": "Escargots de Bourgogne",
+        "Categoria": "Seafood",
+        "Existencia": 62,
+        "Nivel de Reorden": 20
+    },
+    {
+        "Clave": 73,
+        "Producto": "R\u00c3\u00b6d Kaviar",
+        "Categoria": "Seafood",
+        "Existencia": 101,
+        "Nivel de Reorden": 5
+    }
+]
