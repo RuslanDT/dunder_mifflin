@@ -1,0 +1,191 @@
+body{
+    background-color: #F6F6F6;
+    color: black;
+}
+
+body::-webkit-scrollbar {
+    width: 13px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #272727c7;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #272727;    /* color of the scroll thumb */
+    border-radius: 100px;       /* roundness of the scroll thumb */
+  }
+
+p, h3, h4, h5, h6, button, div{
+    font-family: 'Poppins', 'Arial Narrow Bold', sans-serif;
+}
+
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: .4rem;
+}
+
+.navbar-brand, .offcanvas-title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.7rem;
+}
+
+.offcanvas, .list-group-item{
+    background-color: #272727 !important;
+    color: #F6F6F6;
+}
+
+li a{
+    text-decoration: none;
+    color: inherit;
+    font-size: .9rem;
+}
+
+.btn-close{
+    background-color: red;
+}
+
+.menu-lateral{
+    border: 2px solid black;
+}
+
+section{
+    width: 100vw;
+    height: 90vh;
+}
+
+.cont-sucursales div{
+    height: fit-content;
+}
+
+img{
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.logo{
+    width: 20%;
+}
+
+.cont-inicio  div{
+    height: 50%;
+}
+
+.imagenes{
+    position: absolute;
+}
+
+.vendedor{
+    width: 40%;
+    position: absolute;
+    right: 0;
+}
+
+.separador{
+    background-color: #49281F;
+    width: 20%;
+    height: .6rem;
+    justify-content: center;
+    border-radius: 30px;
+    margin: 2.5% 0;
+}
+
+.card-text{
+    text-align: center;
+}
+
+.reseñas{
+    background-color: #272727;
+}
+
+.reseñas h2, .categoria{
+    color: #F6F6F6;
+}
+
+.name-user, .comment{
+    color: #F6F6F6;
+}
+
+.comment{
+    text-align: justify;
+}
+
+.linea{
+    width: 70%;
+    height: .1rem;
+    margin-top: -.4rem;
+    margin-bottom: .8rem;
+    background-color: #EAC761;
+    align-self: center;
+}
+
+.certificado{
+    height: 15rem; 
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.certificado:hover{
+    box-shadow: 0px 10px 32px -7px rgba(0,0,0,0.33);
+    transform: scale(1.1);
+}
+
+.nombre-certificado{
+    width: 100%;
+    height: 0%;
+    color: #F6F6F6;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: #272727b7;
+    backdrop-filter: blur(4px);
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    transition: all .3s ease-in;
+}
+
+
+.certificado:hover .nombre-certificado{
+    height: 100%;
+}
+
+.item-cat{
+    cursor: pointer;
+    background-color: transparent !important;
+    border-color: #f6f6f681;
+    color: #f6f6f681;
+}
+
+.item-icon{
+    opacity: 0.5;
+}
+
+.item-cat:hover .item-icon{
+    transition: all .4s ease-in;
+    transform: rotateZ(0deg);
+    opacity: 1;
+    animation: sacudida .5s ease-in alternate-reverse infinite;
+}
+
+.item-cat:hover{
+    transition: all .4s ease-in;
+    box-shadow: 0 .5rem 1rem #eac86198;
+    border-color: #EAC761;
+    color: #F6F6F6;
+}
+
+@keyframes sacudida {
+    0%{
+        transform: rotateZ(20deg) scale(1.1);
+    }
+    50%{
+        transform: rotateZ(-20deg) scale(.9);
+    }
+    100%{
+        transform: rotateZ(0deg) scale(1);
+    }
+}
