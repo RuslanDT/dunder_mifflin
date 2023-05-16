@@ -19,7 +19,60 @@
 
 <body>
     <div class="container">
-        <button class="btn btn-success">Agregar Producto <i class="fa-solid fa-square-plus"></i></i></button>
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalAgregar">Agregar Producto<i class="fa-solid fa-square-plus"></i></i></button>
+
+        <div class="modal fade" id="modalAgregar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Producto</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label>Clave:</label>
+                    <input type="number" id="clave" class="form-control" placeholder="">
+                    <label>Producto:</label>
+                    <input type="text" id="producto" class="form-control" placeholder="">
+                    <label>Categpría:</label>
+                    <input type="text" id="categoria" class="form-control" placeholder="">
+                    <label>Existencia:</label>
+                    <input type="number" id="existencia" class="form-control" placeholder="">
+                    <label>Nivel de reorden:</label>
+                    <input type="number" id="nivel" class="form-control" placeholder="">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary" id="agregarFila" onclick="agregar()">Agregar</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalEditar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Producto</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label>Producto:</label>
+                    <input type="text" id="productoE" class="form-control" placeholder="">
+                    <label>Categoría:</label>
+                    <input type="text" id="categoriaE" class="form-control" placeholder="">
+                    <label>Existencia:</label>
+                    <input type="number" id="existenciaE" class="form-control" placeholder="">
+                    <label>Nivel de reorden:</label>
+                    <input type="number" id="nivelE" class="form-control" placeholder="">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary" id="editarFila">Agregar</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
         <table id="productos" class="table table-dark table-bordered w-100 h-100"></table>
     </div>
 

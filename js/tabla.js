@@ -14,10 +14,8 @@ $(document).ready(() => {
                 { title: "Existencia", data: "Existencia" },
                 { title: "Nivel de Reorden", data: "Nivel de Reorden" },
                 {
-                    title: 'Operaciones', data: null, render: (data) => {
-                        return '<button type="button" class="btn btn-danger" onclick="eliminar(' +
-                            data.Clave + ')"><i class="fa-solid fa-trash-can"></i></button> <button type="button" class="btn btn-warning" onclick="editar(' +
-                            data.Clave + ')"><i class="fa-solid fa-pen-nib"></i></button>';
+                    title: 'Operaciones', data: null, render: (data, type) => {
+                        return '<button type="button" class="eliminar">Eliminar</button> <button class="editar" type="button">Editar</button>';
                     }
                 }
             ],
@@ -40,8 +38,72 @@ $(document).ready(() => {
                 }
             }
         });
+        var table = $('#productos').DataTable();
+
+        $('#productos').on('click', '.editar', function(){
+            var fila = $(this).closest('tr');
+            var datosFila = table.row(fila).data();
+            var nivelR = "Nivel de Reorden";
+
+
+            var claveE = datosFila.Clave;
+            var productoE = datosFila.Producto;
+            var categoriaE = datosFila.Categoria;
+            var existenciaE = datosFila.Existencia;
+            var nivelReordenE = datosFila.nivelR;
+
+            $("#modalEditar").modal("show");
+
+            $("#productoE").val(productoE);
+            $("#categoriaE").val(categoriaE);
+            $("#existenciaE").val(existenciaE);
+            $("#nivelE").val(nivelReordenE);
+
+        });
+
+        $("#editarFila").on('click', function(){
+            var productoEd = document.getElementById('productoE').value;
+            var categoriaEd = document.getElementById('categoriaE').value;
+            var existenciaEd = document.getElementById('existenciaE').value;
+            var nivelReordenEd = document.getElementById('nivelE').value;
+
+            alert(productoEd);
+
+            var fila = table.row('.selected').node();
+            table.cell(fila, 1).data(productoEd);
+            table.cell(fila, 2).data(categoriaEd);
+            table.cell(fila, 3).data(existenciaEd);
+            table.cell(fila, 4).data(nivelReordenEd);
+
+            $('#modalEditar').modal('hide');
+        });
+        
+        $('#productos').on('click', '.eliminar', function() {
+            var fila = $(this).closest('tr');
+            table.row(fila).remove().draw();
+        });
     });
 });
+
+function agregar(){
+    var table = $('#productos').DataTable();
+    
+    var claveA = document.getElementById('clave').value;
+    var productoA = document.getElementById('producto').value;
+    var categoriaA = document.getElementById('categoria').value;
+    var existenciaA = document.getElementById('existencia').value;
+    var nivelReordenA = document.getElementById('nivel').value;
+
+    table.row.add({
+        "Clave": claveA,
+        "Producto": productoA,
+        "Categoria": categoriaA,
+        "Existencia": existenciaA,
+        "Nivel de Reorden": nivelReordenA
+    }).draw();
+
+    $('#modalAgregar').modal('hide');
+}
 
 function eliminar(id) {
     alert("se elimino el producto " + id);
