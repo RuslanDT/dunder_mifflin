@@ -5,7 +5,7 @@ $(document).ready(() => {
             columns: [
                 {
                     title: 'Carrito', data: null, render: (data) => {
-                        return '<button type="button" class="btn btn-secondary" onclick="agregar(' + data.Clave + ')"><i class="fa-solid fa-cart-plus"></i></button>'
+                        return '<button type="button" class="btn btn-secondary" onclick="agregarCarrito(' + data.Clave + ')"><i class="fa-solid fa-cart-plus"></i></button>'
                     }
                 },
                 { title: "Clave", data: "Clave" },
@@ -15,7 +15,7 @@ $(document).ready(() => {
                 { title: "Nivel de Reorden", data: "Nivel de Reorden" },
                 {
                     title: 'Operaciones', data: null, render: (data, type) => {
-                        return '<button type="button" class="eliminar">Eliminar</button> <button class="editar" type="button">Editar</button>';
+                        return '<button type="button" class="eliminar btn btn-danger"><i class="fa-solid fa-trash-can"></i></button> <button class="editar btn btn-warning" type="button"><i class="fa-solid fa-pen-nib"></i></button>';
                     }
                 }
             ],
@@ -40,7 +40,7 @@ $(document).ready(() => {
         });
         var table = $('#productos').DataTable();
 
-        $('#productos').on('click', '.editar', function(){
+        $('#productos').on('click', '.editar', function () {
             var fila = $(this).closest('tr');
             var datosFila = table.row(fila).data();
             var nivelR = "Nivel de Reorden";
@@ -61,7 +61,7 @@ $(document).ready(() => {
 
         });
 
-        $("#editarFila").on('click', function(){
+        $("#editarFila").on('click', function () {
             var productoEd = document.getElementById('productoE').value;
             var categoriaEd = document.getElementById('categoriaE').value;
             var existenciaEd = document.getElementById('existenciaE').value;
@@ -77,17 +77,17 @@ $(document).ready(() => {
 
             $('#modalEditar').modal('hide');
         });
-        
-        $('#productos').on('click', '.eliminar', function() {
+
+        $('#productos').on('click', '.eliminar', function () {
             var fila = $(this).closest('tr');
             table.row(fila).remove().draw();
         });
     });
 });
 
-function agregar(){
+function agregar() {
     var table = $('#productos').DataTable();
-    
+
     var claveA = document.getElementById('clave').value;
     var productoA = document.getElementById('producto').value;
     var categoriaA = document.getElementById('categoria').value;
@@ -103,16 +103,4 @@ function agregar(){
     }).draw();
 
     $('#modalAgregar').modal('hide');
-}
-
-function eliminar(id) {
-    alert("se elimino el producto " + id);
-}
-
-function editar(id) {
-    alert("Se edito el producto " + id);
-}
-
-function agregar(id) {
-    alert("Se agrego al carrito el producto " + id);
 }
