@@ -43,14 +43,13 @@ $(document).ready(() => {
         $('#productos').on('click', '.editar', function () {
             var fila = $(this).closest('tr');
             var datosFila = table.row(fila).data();
-            var nivelR = "Nivel de Reorden";
 
 
             var claveE = datosFila.Clave;
             var productoE = datosFila.Producto;
             var categoriaE = datosFila.Categoria;
             var existenciaE = datosFila.Existencia;
-            var nivelReordenE = datosFila.nivelR;
+            var nivelReordenE = datosFila["Nivel de Reorden"];
 
             $("#modalEditar").modal("show");
 

@@ -20,6 +20,7 @@
 <body>
     <div class="container">
         <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalAgregar">Agregar Producto<i class="fa-solid fa-square-plus"></i></i></button>
+
         <div class="modal fade" id="modalAgregar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
               <div class="modal-content">
@@ -28,15 +29,17 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <label>Clave:</label>
+                    <label class="modalito">Clave:</label>
                     <input type="number" id="clave" class="form-control" placeholder="">
-                    <label>Producto:</label>
+                    <label class="modalito">Foto:</label>
+                    <input type="file" id="clave" class="form-control" placeholder="">
+                    <label class="modalito">Producto:</label>
                     <input type="text" id="producto" class="form-control" placeholder="">
-                    <label>Categpría:</label>
+                    <label class="modalito">Categpría:</label>
                     <input type="text" id="categoria" class="form-control" placeholder="">
-                    <label>Existencia:</label>
+                    <label class="modalito">Existencia:</label>
                     <input type="number" id="existencia" class="form-control" placeholder="">
-                    <label>Nivel de reorden:</label>
+                    <label class="modalito">Nivel de reorden:</label>
                     <input type="number" id="nivel" class="form-control" placeholder="">
                 </div>
                 <div class="modal-footer">
@@ -55,13 +58,13 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <label>Producto:</label>
+                    <label class="modalito">Producto:</label>
                     <input type="text" id="productoE" class="form-control" placeholder="">
-                    <label>Categoría:</label>
+                    <label class="modalito">Categoría:</label>
                     <input type="text" id="categoriaE" class="form-control" placeholder="">
-                    <label>Existencia:</label>
+                    <label class="modalito">Existencia:</label>
                     <input type="number" id="existenciaE" class="form-control" placeholder="">
-                    <label>Nivel de reorden:</label>
+                    <label class="modalito">Nivel de reorden:</label>
                     <input type="number" id="nivelE" class="form-control" placeholder="">
                 </div>
                 <div class="modal-footer">
@@ -71,6 +74,7 @@
               </div>
             </div>
         </div>
+
         <table id="productos" class="table table-dark table-bordered w-100 h-100"></table>
     </div>
 
