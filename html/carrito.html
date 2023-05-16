@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <div class="py-5 text-center">
+                <img class="d-block mx-auto mb-4" src="../resources/logo negro.png" alt="" width="72" height="57">
+                <h2>Carrito</h2>
+                <p class="lead">En Dunder Mifflin nos preocupamos mucho por la seguridad de tu tarjeta
+                    por lo que permitimos pagar con diferentes tarjetas y con Paypal.
+                </p>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-md-5 col-lg-4 order-md-last">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-dark">Carrito</span>
+                        <span class="badge bg-primary rounded-pill">2 objetos</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Subtotal</h6>
+                                <small class="text-body-secondary">2 objetos</small>
+                            </div>
+                            <span class="text-body-secondary"><strong>$Precio</strong></span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Total (MXN)</span>
+                            <strong>$Total</strong>
+                        </li>
+                    </ul>
+
+                    <form class="card p-2">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            Proceder al Pago
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">¿Seguro que quiere confirmar su compra?</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        En su carrito tiene: 2 objetos, con valor total de: $Precio
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Regresar</button>
+                                        <button type="button" class="btn btn-primary">Continuar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-7 col-lg-8">
+                    <div class="row w-100 m-0" id="item-product">
+                        <div class="col-1 d-flex align-items-center justify-content-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="">
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-2">
+                            <img src="https://m.media-amazon.com/images/I/81sPI+eyRvL._AC_AA180_.jpg" alt=""
+                                class="img-fluid">
+                        </div>
+                        <div class="col d-flex flex-column">
+                            <h1>Fuente de poder</h1>
+                            <small class="text-success">Disponible</small>
+                            <small>
+                                <strong>Categoria:</strong>
+                                Computadoras
+                            </small>
+                            <div class="d-none d-md-flex my-2">
+                                <div class="row w-100 m-0">
+                                    <div class="col-3 p-0">
+                                        <select class="form-select form-select-sm" aria-label="Default select example">
+                                            <option selected value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col d-flex align-items-center">
+                                        <a href="" class="text-decoration-none">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-2 d-flex justify-content-center">
+                            <span>
+                                <p class="fs-5 fw-bold text-break m-0 my-2">$2000.00</p>
+                            </span>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="row w-100 m-0" id="item-product">
+                        <div class="col-1 d-flex align-items-center justify-content-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="">
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-2">
+                            <img src="https://m.media-amazon.com/images/I/81sPI+eyRvL._AC_AA180_.jpg" alt=""
+                                class="img-fluid">
+                        </div>
+                        <div class="col d-flex flex-column">
+                            <h1>Fuente de poder</h1>
+                            <small class="text-danger">Sin existencias</small>
+                            <small>
+                                <strong>Categoria:</strong>
+                                Computadoras
+                            </small>
+                            <div class="d-none d-md-flex my-2">
+                                <div class="row w-100 m-0">
+                                    <div class="col-3 p-0">
+                                        <select class="form-select form-select-sm" aria-label="Default select example">
+                                            <option selected value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col d-flex align-items-center">
+                                        <a href="" class="text-decoration-none">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-2 d-flex justify-content-center">
+                            <span>
+                                <p class="fs-5 fw-bold text-break m-0 my-2">$2000.00</p>
+                            </span>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+            <p class="mb-1">© 2023 DUNDER MIFFLIN, INC</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacy</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Support</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+<script src="../js/bootstrap.bundle.min.js"></script>
+
+</html>
